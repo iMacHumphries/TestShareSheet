@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func share(_ sender: Any) {
+        let activityViewController = UIActivityViewController(activityItems: ["Test", UIImage()], applicationActivities: nil)
+       
+        present(activityViewController, animated: true)
     }
-
-
+    
 }
 
